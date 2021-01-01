@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>smartly own</title>
+
+        <!--google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+        <!--font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+              
+        <!--style-->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--Media Query style-->
+        <link rel="stylesheet" href="css/media-query.css">
+
+    </head>
+    <body>
+        <!--color option-->
+        <div class="color-option" id="color-option-hide-or-show">
+          <div class="color-1 color-box" onclick="ColorOne()"></div>
+          <div class="color-2 color-box" onclick="ColorTwo()"></div>
+          <div class="color-3 color-box" onclick="ColorThree()"></div>
+          <div class="option-button">
+            <a id="coloropener"><i class="fas fa-cog"></i></a>
+          </div>
+        </div>
+        <!--color option end-->
+        <!--scroll button-->
+        <a href="#navbar" class="scroll" id="scroll">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+        <!--scroll button end-->
+        <!--navbar-->
+        <div class="cantainer">
+            <div class="navbar" id="navbar">
+                <div class="nav-logo">
+                    <h4>smartly own</h4>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#pricing">pricing</a></li>
+                        <li><a href="#contact"><span class="highlighted">contacts</span></a></li>
+                    </ul>
+                </div>
+                <!--small device navbar menu icon-->
+                <div class="nav-icon">
+                  <i class="fas fa-bars" onclick="navShowHide()"></i>
+                </div>
+            </div>
+        </div>
+        <!--small device menu-->
+          <ul class="small-device-nav-bar">
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#pricing">pricing</a></li>
+            <li><a href="#contact">contacts</a></li>
+          </ul>
+        <!--navbar end-->
+        <!--Bootstrap carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item slider active">
+                <img class="d-block w-100 slider-image" src="images/bootstrap-carousel/carousel-1.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block slider-detail">
+                  <h1>hey! i'm smartly<span>web designer and developer</span></h1>
+                  <a href="#contact">hire me</a>
+                </div>
+              </div>
+              <div class="carousel-item slider">
+                <video class="d-block w-100 slider-image" muted autoplay preload="auto">
+                    <source src="images/bootstrap-carousel/carousel-2.mp4" type="video/mp4">
+                </video>
+                <div class="carousel-caption d-none d-md-block slider-detail">
+                  <h1>i write computer<span>code to bring ideas to life</span></h1>
+                  <a href="#contact">hire me</a>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev bootstrap-slider-control" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next bootstrap-slider-control" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <i class="fas fa-caret-down down-arrow"></i>
+          </div>
+        <!--Bootstrap carousel end-->
+        <!--latest work-->
+          <h2 class="heading" id="portfolio">latest work<span></span></h2>
+          <div class="cantainer">
+            <div class="latest-work">
+              <div class="work-grid">
+                <div class="work-image">
+                  <img src="images/latest-work/1.jpg" alt="work-image-1">
+                    <p>my first project</p>
+                </div>
+              </div>
+              <div class="work-grid">
+                <div class="work-image">
+                  <img src="images/latest-work/2.jpg" alt="work-image-2">
+                    <p>my second project</p>
+                </div>
+              </div>
+              <div class="work-grid">
+                <div class="work-image">
+                  <img src="images/latest-work/3.jpg" alt="work-image-3">
+                    <p>my third project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--latest work end-->
+          <!--my skills-->
+            <div class="my-skill" id="skills">
+              <div class="skill-description">
+                <h4>my skills</h4>
+                <p>Phasellus ullamcorper ipsum rutrum nunc. Fusce convallis metus id felis luctus adipiscing. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Nulla sit amet est.</p>
+                <p>Curabitur ullamcorper ultricies nisi. Curabitur ullamcorper ultricies nisi.</p>
+              </div>
+              <div class="skill-progress">
+                <div class="progress-or-label">
+                  <label>web design</label>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress-or-label">
+                  <label>web development</label>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress-or-label">
+                  <label>web marketing</label>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress-or-label">
+                  <label>s.e.o</label>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!--my skills end-->
+          <!--services-->
+          <h2 class="heading" id="services">services<span></span></h2>
+            <div class="services">
+              <div class="service-box">
+                <div class="icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="service-detail">
+                  <h4>web development</h4>
+                  <p>Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.</p>
+                </div>
+              </div>
+              <div class="service-box">
+                <div class="icon">
+                  <i class="fas fa-edit"></i>
+                </div>
+                <div class="service-detail">
+                  <h4>Graphic Design</h4>
+                  <p>Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Phasellus consectetuer vestibulum elit. Phasellus.</p>
+                </div>
+              </div>
+              <div class="service-box">
+                <div class="icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div class="service-detail">
+                  <h4>Fast Delivery</h4>
+                  <p>Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Nulla facilisi.</p>
+                </div>
+              </div>
+              <div class="service-box">
+                <div class="icon">
+                  <i class="fas fa-laptop"></i>
+                </div>
+                <div class="service-detail">
+                  <h4>UI Design</h4>
+                  <p>Pellentesque commodo eros a enim. Cum sociis natoque penatibus et magnis dis parturient montes, ridiculus mus.</p>
+                </div>
+              </div>
+              <div class="service-box">
+                <div class="icon">
+                  <i class="fas fa-comments"></i>
+                </div>
+                <div class="service-detail">
+                  <h4>24/7 Support</h4>
+                  <p>Nullam sagittis. Morbi vestibulum volutpat enim. Nulla porta dolor. Nullam sagittis. Fusce risus nisl, viverra tempor.</p>
+                </div>
+              </div>
+              <div class="service-box">
+                <div class="icon">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <div class="service-detail">
+                  <h4>Brand Identity</h4>
+                  <p>Curabitur turpis. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus.</p>
+                </div>
+              </div>
+            </div>
+          <!--services end-->
+          <!--pricing-->
+            <div class="all-pricing-pkg" id="pricing">
+              <h2 class="heading">pricing<span></span></h2>
+                <div class="pricing">
+                  <!--basic package-->
+                  <div class="pricing-pkg">
+                    <div class="pkg-name">
+                      <h3>Basic</h3>
+                    </div>
+                    <div class="pkg-price">
+                      <h2>$249</h2>
+                    </div>
+                    <div class="pkg-support">
+                      <p>No Domain Name</p>
+                      <hr>
+                      <p>Email Support</p>
+                      <hr>
+                      <p>No Custom Coding</p>
+                      <hr>
+                    </div>
+                    <div class="pkg-order">
+                      <a href="#">order</a>
+                    </div>
+                  </div>
+                  <!--standard package-->
+                  <div class="pricing-pkg">
+                    <div class="pkg-name">
+                      <h3>Standard</h3>
+                    </div>
+                    <div class="pkg-price">
+                      <h2>$349</h2>
+                    </div>
+                    <div class="pkg-support">
+                      <p>1 Domain Name</p>
+                      <hr>
+                      <p>Phone Support</p>
+                      <hr>
+                      <p>Custom Coding</p>
+                      <hr>
+                    </div>
+                    <div class="pkg-order">
+                      <a href="#">order</a>
+                    </div>
+                  </div>
+                  <!--premium package-->
+                  <div class="pricing-pkg">
+                    <div class="pkg-name">
+                      <h3>Premium</h3>
+                    </div>
+                    <div class="pkg-price">
+                      <h2>$449</h2>
+                    </div>
+                    <div class="pkg-support">
+                      <p>Domain + Sub-Domains</p>
+                      <hr>
+                      <p>24/7 Support</p>
+                      <hr>
+                      <p>Custom Coding By A Team</p>
+                      <hr>
+                    </div>
+                    <div class="pkg-order">
+                      <a href="#">order</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!--pricing end-->
+          <!--contact-->
+          <div class="contact" id="contact">
+            <h4>Contact me on 0-000-000-0000 or just <span><a href="#">email me</a></span></h4>
+          </div>
+          <!--contact end-->
+          <div class="horizontal"></div>
+          <!--footer-->
+          <footer>
+            <div class="footer-top">
+              <div class="footer-social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+              <div class="footer-social-icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div class="footer-social-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="footer-social-icon">
+                <i class="fab fa-dribbble"></i>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="footer-copy-right">
+                <p>© 2021, Rizwan Sarwar - All Rights Reserved</p>
+              </div>
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#pricing">Pricing</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+          <!--footer end-->
+        <!--JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
